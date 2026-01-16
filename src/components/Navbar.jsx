@@ -6,7 +6,7 @@ export default function Navbar() {
   return (
     <>
       <header className="navbar">
-        <div className="nav-inner glass">
+        <div className="nav-inner">
 
           {/* LEFT */}
           <h1 className="logo">Siddhartha</h1>
