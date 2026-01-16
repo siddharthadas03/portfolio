@@ -9,10 +9,10 @@ const sendEmail = (e) => {
 
   emailjs
     .sendForm(
-  import.meta.env.VITE_EMAILJS_SERVICE,
-  import.meta.env.VITE_EMAILJS_TEMPLATE,
+  import.meta.env.VITE_EMAILJS_SERVICE_ID,
+  import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
   formRef.current,
-  import.meta.env.VITE_EMAILJS_PUBLIC
+  import.meta.env.VITE_EMAILJS_PUBLIC_KEY
     )
     .then((res) => {
       console.log("SUCCESS:", res);
