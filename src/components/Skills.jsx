@@ -42,7 +42,7 @@ export default function Skills() {
 
   return (
     <section id="skills" className="section skills-section">
-      <div className="section-header">
+      <div className="section-header container">
         <h2>Technical Skills</h2>
         <p>Technologies and tools I work with</p>
       </div>

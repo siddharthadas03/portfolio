@@ -19,7 +19,7 @@ export default function Projects() {
 
   return (
     <section id="projects" className="section projects-section">
-      <div className="section-header">
+      <div className="section-header container">
         <h2>Projects</h2>
         <p>Selected work that reflects my skills</p>
       </div>

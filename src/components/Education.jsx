@@ -3,7 +3,7 @@ export default function Education() {
     <section id="education" className="education-section">
       <h2 className="edu-title">Education</h2>
 
-      <div className="edu-timeline">
+      <div className="edu-timeline container">
         <div className="edu-line" />
 
         <div className="edu-item left">

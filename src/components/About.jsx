@@ -12,10 +12,10 @@ export default function About() {
       </div>
 
       {/* CONTENT WRAPPER */}
-      <div className="about-content glass">
+      <div className="about-content glass container about-container">
 
         {/* LEFT TEXT */}
-        <div className="about-text">
+        <div className="about-text ">
           <h2>About Me</h2>
 
           <p>
