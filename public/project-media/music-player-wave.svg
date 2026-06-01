@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" fill="none">
+  <rect width="1600" height="900" rx="44" fill="#090E19"/>
+  <circle cx="250" cy="700" r="220" fill="#F97316" fill-opacity=".14"/>
+  <circle cx="1280" cy="180" r="180" fill="#53F2FF" fill-opacity=".12"/>
+  <text x="120" y="176" fill="#F4F7FF" font-family="Arial, sans-serif" font-size="58" font-weight="700">Music Player Interface</text>
+  <text x="120" y="228" fill="#9FB2D5" font-family="Arial, sans-serif" font-size="26">A focused audio UI with motion, playlist control, and rhythm-led visuals.</text>
+  <rect x="120" y="300" width="1360" height="500" rx="34" fill="#10192B" stroke="#53F2FF" stroke-opacity=".18"/>
+  <circle cx="440" cy="550" r="170" fill="#132338" stroke="#53F2FF" stroke-opacity=".28"/>
+  <circle cx="440" cy="550" r="124" fill="#1B2B43"/>
+  <rect x="720" y="392" width="620" height="34" rx="17" fill="#1C2942"/>
+  <rect x="720" y="392" width="420" height="34" rx="17" fill="#53F2FF"/>
+  <rect x="720" y="468" width="560" height="20" rx="10" fill="#243655"/>
+  <rect x="720" y="520" width="502" height="20" rx="10" fill="#243655"/>
+  <rect x="720" y="572" width="460" height="20" rx="10" fill="#243655"/>
+  <path d="M760 708C820 640 886 620 952 652C1004 676 1060 672 1112 640C1160 610 1210 604 1260 620" stroke="#53F2FF" stroke-width="10" stroke-linecap="round"/>
+  <path d="M760 742C814 700 874 686 934 706C1004 728 1072 724 1126 686C1178 650 1230 646 1284 662" stroke="#8B5CF6" stroke-width="10" stroke-linecap="round"/>
+</svg>

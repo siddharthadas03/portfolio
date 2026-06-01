@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="90" y1="60" x2="1480" y2="860" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1224"/>
+      <stop offset="1" stop-color="#07111E"/>
+    </linearGradient>
+    <linearGradient id="halo" x1="220" y1="140" x2="1260" y2="740" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#53F2FF" stop-opacity=".35"/>
+      <stop offset=".55" stop-color="#8B5CF6" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#F97316" stop-opacity=".14"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" rx="44" fill="url(#bg)"/>
+  <rect x="70" y="70" width="1460" height="760" rx="36" stroke="url(#halo)" stroke-opacity=".4"/>
+  <circle cx="1320" cy="180" r="170" fill="#53F2FF" fill-opacity=".12"/>
+  <circle cx="320" cy="720" r="220" fill="#8B5CF6" fill-opacity=".14"/>
+  <rect x="120" y="122" width="220" height="40" rx="20" fill="#53F2FF" fill-opacity=".12" stroke="#53F2FF" stroke-opacity=".36"/>
+  <text x="145" y="148" fill="#DDFBFF" font-family="Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="2">LIVE FOOD NETWORK</text>
+  <text x="120" y="238" fill="#F4F7FF" font-family="Arial, sans-serif" font-size="64" font-weight="700">No Plate Empty</text>
+  <text x="120" y="296" fill="#9FB2D5" font-family="Arial, sans-serif" font-size="28">Operations dashboard for donors, NGOs, and redistribution status.</text>
+  <rect x="120" y="356" width="400" height="260" rx="28" fill="#111B31" stroke="#53F2FF" stroke-opacity=".24"/>
+  <text x="152" y="404" fill="#F4F7FF" font-family="Arial, sans-serif" font-size="26" font-weight="700">Daily rescue stats</text>
+  <text x="152" y="468" fill="#53F2FF" font-family="Arial, sans-serif" font-size="58" font-weight="700">124</text>
+  <text x="152" y="508" fill="#9FB2D5" font-family="Arial, sans-serif" font-size="22">Meals routed today</text>
+  <rect x="152" y="540" width="320" height="16" rx="8" fill="#1D2A45"/>
+  <rect x="152" y="540" width="236" height="16" rx="8" fill="#53F2FF"/>
+  <rect x="560" y="356" width="420" height="260" rx="28" fill="#111B31" stroke="#8B5CF6" stroke-opacity=".24"/>
+  <text x="592" y="404" fill="#F4F7FF" font-family="Arial, sans-serif" font-size="26" font-weight="700">Pickup pipeline</text>
+  <rect x="592" y="444" width="356" height="32" rx="16" fill="#17253E"/>
+  <rect x="592" y="494" width="290" height="32" rx="16" fill="#17253E"/>
+  <rect x="592" y="544" width="328" height="32" rx="16" fill="#17253E"/>
+  <circle cx="624" cy="460" r="10" fill="#53F2FF"/>
+  <circle cx="624" cy="510" r="10" fill="#8B5CF6"/>
+  <circle cx="624" cy="560" r="10" fill="#F97316"/>
+  <rect x="1020" y="356" width="460" height="360" rx="28" fill="#111B31" stroke="#53F2FF" stroke-opacity=".2"/>
+  <text x="1052" y="404" fill="#F4F7FF" font-family="Arial, sans-serif" font-size="26" font-weight="700">Coverage map</text>
+  <path d="M1100 620C1160 510 1230 492 1304 556C1360 604 1418 610 1450 592" stroke="#53F2FF" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="1110" cy="618" r="18" fill="#53F2FF"/>
+  <circle cx="1304" cy="556" r="18" fill="#8B5CF6"/>
+  <circle cx="1450" cy="592" r="18" fill="#F97316"/>
+  <rect x="1054" y="660" width="180" height="18" rx="9" fill="#53F2FF" fill-opacity=".82"/>
+  <rect x="1054" y="694" width="262" height="18" rx="9" fill="#8B5CF6" fill-opacity=".7"/>
+  <rect x="120" y="658" width="860" height="122" rx="28" fill="#0D1528" stroke="#53F2FF" stroke-opacity=".18"/>
+  <text x="156" y="706" fill="#F4F7FF" font-family="Arial, sans-serif" font-size="24" font-weight="700">Mission</text>
+  <text x="156" y="748" fill="#9FB2D5" font-family="Arial, sans-serif" font-size="22">Reduce waste, speed coordination, and move surplus food to the right people faster.</text>
+</svg>

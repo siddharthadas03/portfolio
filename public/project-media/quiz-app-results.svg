@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" fill="none">
+  <rect width="1600" height="900" rx="44" fill="#070E19"/>
+  <circle cx="300" cy="180" r="160" fill="#8B5CF6" fill-opacity=".12"/>
+  <text x="120" y="170" fill="#F4F7FF" font-family="Arial, sans-serif" font-size="58" font-weight="700">Quiz Result State</text>
+  <text x="120" y="220" fill="#9FB2D5" font-family="Arial, sans-serif" font-size="26">Score summary, completion state, and next action prompts.</text>
+  <rect x="320" y="260" width="960" height="420" rx="38" fill="#10192C" stroke="#8B5CF6" stroke-opacity=".18"/>
+  <circle cx="800" cy="430" r="120" fill="#15243A" stroke="#53F2FF" stroke-opacity=".3"/>
+  <text x="738" y="446" fill="#53F2FF" font-family="Arial, sans-serif" font-size="62" font-weight="700">86%</text>
+  <text x="700" y="560" fill="#F4F7FF" font-family="Arial, sans-serif" font-size="34" font-weight="700">Great run</text>
+  <rect x="590" y="612" width="180" height="48" rx="24" fill="#53F2FF"/>
+  <rect x="830" y="612" width="180" height="48" rx="24" fill="#1F3150"/>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" fill="none">
+  <rect width="1600" height="900" rx="44" fill="#08101C"/>
+  <circle cx="1320" cy="200" r="190" fill="#53F2FF" fill-opacity=".1"/>
+  <text x="120" y="176" fill="#F4F7FF" font-family="Arial, sans-serif" font-size="58" font-weight="700">Quiz Challenge UI</text>
+  <text x="120" y="228" fill="#9FB2D5" font-family="Arial, sans-serif" font-size="26">Timed MCQ interface with clear answer states and score feedback.</text>
+  <rect x="220" y="286" width="1160" height="540" rx="36" fill="#10192C" stroke="#53F2FF" stroke-opacity=".18"/>
+  <text x="290" y="392" fill="#F4F7FF" font-family="Arial, sans-serif" font-size="34" font-weight="700">Question 07</text>
+  <text x="290" y="454" fill="#D8E6FF" font-family="Arial, sans-serif" font-size="42" font-weight="700">Which layer manages state transitions in the app?</text>
+  <rect x="290" y="534" width="1020" height="76" rx="24" fill="#162238" stroke="#53F2FF" stroke-opacity=".24"/>
+  <rect x="290" y="632" width="1020" height="76" rx="24" fill="#162238" stroke="#8B5CF6" stroke-opacity=".18"/>
+  <rect x="290" y="730" width="1020" height="76" rx="24" fill="#162238" stroke="#F97316" stroke-opacity=".18"/>
+  <rect x="1120" y="362" width="140" height="44" rx="22" fill="#53F2FF"/>
+</svg>

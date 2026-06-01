@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" fill="none">
+  <rect width="1600" height="900" rx="44" fill="#07101E"/>
+  <circle cx="240" cy="160" r="160" fill="#8B5CF6" fill-opacity=".18"/>
+  <circle cx="1320" cy="200" r="120" fill="#53F2FF" fill-opacity=".12"/>
+  <text x="120" y="176" fill="#F4F7FF" font-family="Arial, sans-serif" font-size="58" font-weight="700">Job Portal Dashboard</text>
+  <text x="120" y="230" fill="#9FB2D5" font-family="Arial, sans-serif" font-size="26">Recruiter and applicant flows with authentication, posting, and tracking.</text>
+  <rect x="120" y="300" width="1360" height="480" rx="34" fill="#0F172A" stroke="#53F2FF" stroke-opacity=".18"/>
+  <rect x="164" y="346" width="250" height="388" rx="24" fill="#121F35"/>
+  <rect x="460" y="346" width="514" height="184" rx="24" fill="#121F35"/>
+  <rect x="460" y="550" width="514" height="184" rx="24" fill="#121F35"/>
+  <rect x="1018" y="346" width="416" height="388" rx="24" fill="#121F35"/>
+  <text x="196" y="398" fill="#F4F7FF" font-family="Arial, sans-serif" font-size="28" font-weight="700">Navigation</text>
+  <rect x="196" y="440" width="170" height="22" rx="11" fill="#53F2FF" fill-opacity=".75"/>
+  <rect x="196" y="486" width="146" height="22" rx="11" fill="#223453"/>
+  <rect x="196" y="532" width="152" height="22" rx="11" fill="#223453"/>
+  <text x="492" y="396" fill="#F4F7FF" font-family="Arial, sans-serif" font-size="28" font-weight="700">Open roles</text>
+  <rect x="492" y="432" width="430" height="18" rx="9" fill="#223453"/>
+  <rect x="492" y="470" width="360" height="18" rx="9" fill="#53F2FF"/>
+  <text x="492" y="600" fill="#F4F7FF" font-family="Arial, sans-serif" font-size="28" font-weight="700">Recent applicants</text>
+  <rect x="492" y="636" width="430" height="18" rx="9" fill="#223453"/>
+  <rect x="492" y="674" width="320" height="18" rx="9" fill="#8B5CF6"/>
+  <text x="1050" y="396" fill="#F4F7FF" font-family="Arial, sans-serif" font-size="28" font-weight="700">Application pipeline</text>
+  <rect x="1050" y="442" width="330" height="26" rx="13" fill="#223453"/>
+  <rect x="1050" y="486" width="280" height="26" rx="13" fill="#223453"/>
+  <rect x="1050" y="530" width="348" height="26" rx="13" fill="#223453"/>
+  <rect x="1050" y="574" width="296" height="26" rx="13" fill="#223453"/>
+  <circle cx="1080" cy="455" r="8" fill="#53F2FF"/>
+  <circle cx="1080" cy="499" r="8" fill="#8B5CF6"/>
+  <circle cx="1080" cy="543" r="8" fill="#F97316"/>
+  <circle cx="1080" cy="587" r="8" fill="#53F2FF"/>
+</svg>

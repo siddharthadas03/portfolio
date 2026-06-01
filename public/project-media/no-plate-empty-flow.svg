@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#08101E"/>
+      <stop offset="1" stop-color="#050816"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" rx="44" fill="url(#bg)"/>
+  <circle cx="240" cy="160" r="140" fill="#53F2FF" fill-opacity=".12"/>
+  <circle cx="1380" cy="740" r="180" fill="#F97316" fill-opacity=".1"/>
+  <text x="120" y="170" fill="#F4F7FF" font-family="Arial, sans-serif" font-size="58" font-weight="700">Donation Request Flow</text>
+  <text x="120" y="220" fill="#9FB2D5" font-family="Arial, sans-serif" font-size="26">A clearer look at how No Plate Empty moves food from donor to destination.</text>
+  <rect x="120" y="320" width="280" height="320" rx="28" fill="#101A2E" stroke="#53F2FF" stroke-opacity=".26"/>
+  <rect x="464" y="320" width="280" height="320" rx="28" fill="#101A2E" stroke="#8B5CF6" stroke-opacity=".26"/>
+  <rect x="808" y="320" width="280" height="320" rx="28" fill="#101A2E" stroke="#F97316" stroke-opacity=".26"/>
+  <rect x="1152" y="320" width="280" height="320" rx="28" fill="#101A2E" stroke="#53F2FF" stroke-opacity=".26"/>
+  <text x="154" y="394" fill="#DDFBFF" font-family="Arial, sans-serif" font-size="28" font-weight="700">1. Donor submits</text>
+  <text x="154" y="452" fill="#9FB2D5" font-family="Arial, sans-serif" font-size="22">Food type, quantity, pickup</text>
+  <text x="498" y="394" fill="#E9DDFF" font-family="Arial, sans-serif" font-size="28" font-weight="700">2. NGO matched</text>
+  <text x="498" y="452" fill="#9FB2D5" font-family="Arial, sans-serif" font-size="22">Location and need-based routing</text>
+  <text x="842" y="394" fill="#FFE5D1" font-family="Arial, sans-serif" font-size="28" font-weight="700">3. Pickup confirmed</text>
+  <text x="842" y="452" fill="#9FB2D5" font-family="Arial, sans-serif" font-size="22">Time slot and logistics shared</text>
+  <text x="1186" y="394" fill="#DDFBFF" font-family="Arial, sans-serif" font-size="28" font-weight="700">4. Delivery tracked</text>
+  <text x="1186" y="452" fill="#9FB2D5" font-family="Arial, sans-serif" font-size="22">Completion visible to all sides</text>
+  <path d="M400 480H464" stroke="#53F2FF" stroke-width="8" stroke-linecap="round"/>
+  <path d="M744 480H808" stroke="#8B5CF6" stroke-width="8" stroke-linecap="round"/>
+  <path d="M1088 480H1152" stroke="#F97316" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="430" cy="480" r="10" fill="#53F2FF"/>
+  <circle cx="774" cy="480" r="10" fill="#8B5CF6"/>
+  <circle cx="1118" cy="480" r="10" fill="#F97316"/>
+</svg>

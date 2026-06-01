@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" fill="none">
+  <rect width="1600" height="900" rx="44" fill="#06101C"/>
+  <circle cx="1320" cy="160" r="160" fill="#53F2FF" fill-opacity=".1"/>
+  <text x="120" y="170" fill="#F4F7FF" font-family="Arial, sans-serif" font-size="58" font-weight="700">Applicant Journey</text>
+  <text x="120" y="222" fill="#9FB2D5" font-family="Arial, sans-serif" font-size="26">Browse roles, upload resume, and track applications in one flow.</text>
+  <rect x="120" y="300" width="1360" height="500" rx="34" fill="#101A2E" stroke="#8B5CF6" stroke-opacity=".18"/>
+  <rect x="176" y="360" width="512" height="120" rx="24" fill="#131F35"/>
+  <rect x="176" y="516" width="512" height="120" rx="24" fill="#131F35"/>
+  <rect x="176" y="672" width="512" height="72" rx="24" fill="#131F35"/>
+  <rect x="748" y="360" width="676" height="384" rx="28" fill="#131F35"/>
+  <text x="214" y="410" fill="#F4F7FF" font-family="Arial, sans-serif" font-size="28" font-weight="700">Search role</text>
+  <text x="214" y="566" fill="#F4F7FF" font-family="Arial, sans-serif" font-size="28" font-weight="700">Upload resume</text>
+  <text x="214" y="714" fill="#F4F7FF" font-family="Arial, sans-serif" font-size="28" font-weight="700">Track response</text>
+  <rect x="796" y="416" width="552" height="22" rx="11" fill="#53F2FF"/>
+  <rect x="796" y="470" width="420" height="18" rx="9" fill="#243655"/>
+  <rect x="796" y="512" width="474" height="18" rx="9" fill="#243655"/>
+  <rect x="796" y="554" width="390" height="18" rx="9" fill="#243655"/>
+  <rect x="796" y="626" width="198" height="50" rx="18" fill="#8B5CF6"/>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" fill="none">
+  <rect width="1600" height="900" rx="44" fill="#080E18"/>
+  <text x="120" y="170" fill="#F4F7FF" font-family="Arial, sans-serif" font-size="58" font-weight="700">Playlist Panel</text>
+  <text x="120" y="220" fill="#9FB2D5" font-family="Arial, sans-serif" font-size="26">Queue management, now-playing state, and simplified playback structure.</text>
+  <rect x="120" y="300" width="1360" height="500" rx="34" fill="#10192B" stroke="#8B5CF6" stroke-opacity=".18"/>
+  <rect x="176" y="356" width="1248" height="88" rx="22" fill="#151F34"/>
+  <rect x="176" y="474" width="1248" height="88" rx="22" fill="#151F34"/>
+  <rect x="176" y="592" width="1248" height="88" rx="22" fill="#151F34"/>
+  <circle cx="244" cy="400" r="22" fill="#53F2FF"/>
+  <circle cx="244" cy="518" r="22" fill="#8B5CF6"/>
+  <circle cx="244" cy="636" r="22" fill="#F97316"/>
+  <rect x="300" y="384" width="420" height="16" rx="8" fill="#53F2FF"/>
+  <rect x="300" y="502" width="390" height="16" rx="8" fill="#223453"/>
+  <rect x="300" y="620" width="446" height="16" rx="8" fill="#223453"/>
+  <rect x="1180" y="378" width="180" height="36" rx="18" fill="#1F3150"/>
+  <rect x="1180" y="496" width="180" height="36" rx="18" fill="#1F3150"/>
+  <rect x="1180" y="614" width="180" height="36" rx="18" fill="#1F3150"/>
+</svg>
