@@ -3,6 +3,7 @@ import { navLinks } from "../data/portfolioData";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const [activeHref, setActiveHref] = useState("#home");
   const [theme, setTheme] = useState(() => localStorage.getItem("portfolio-theme") ?? "dark");
   const directEmailLink =
     "mailto:siddharthadas620@gmail.com?subject=Let%27s%20build%20something";
@@ -15,6 +16,28 @@ export default function Navbar() {
   const toggleTheme = () => {
     setTheme(currentTheme => (currentTheme === "dark" ? "light" : "dark"));
   };
+
+  useEffect(() => {
+    const sections = ["#home", ...navLinks.map(link => link.href)]
+      .map(href => document.querySelector(href))
+      .filter(Boolean);
+
+    const updateActiveSection = () => {
+      const currentSection =
+        sections
+          .slice()
+          .reverse()
+          .find(section => section.getBoundingClientRect().top <= 130) ?? sections[0];
+
+      if (currentSection) {
+        setActiveHref(`#${currentSection.id}`);
+      }
+    };
+
+    updateActiveSection();
+    window.addEventListener("scroll", updateActiveSection, { passive: true });
+    return () => window.removeEventListener("scroll", updateActiveSection);
+  }, []);
 
   return (
     <>
@@ -30,7 +53,11 @@ export default function Navbar() {
 
           <nav className="nav-links">
             {navLinks.map(link => (
-              <a key={link.href} href={link.href}>
+              <a
+                key={link.href}
+                href={link.href}
+                className={activeHref === link.href ? "is-active" : ""}
+              >
                 {link.label}
               </a>
             ))}

@@ -89,6 +89,9 @@ const getProjectMedia = (folder) => {
 };
 
 export const projects = [
+
+  
+
   {
     slug: "no-plate-empty",
     title: "No Plate Empty",
@@ -107,6 +110,32 @@ export const projects = [
     media: getProjectMedia("noplateemplty")
   },
   {
+    slug: "intellinote",
+    title: "IntelliNote",
+    strap: "AI-powered collaborative notes platform",
+    status: "Latest Project",
+    summary:
+      "An AI-powered collaborative note-taking platform built for creating, managing, and enhancing notes with intelligent assistance.",
+    details:
+      "Built with React, Node.js, Express.js, MongoDB Atlas, and Google Gemini API, featuring secure JWT authentication, user-based note management, and scalable RESTful APIs.",
+    tech: [
+      "React",
+      "Node.js",
+      "Express.js",
+      "MongoDB Atlas",
+      "JWT",
+      "Google Gemini API"
+    ],
+    highlights: [
+      "Built an AI-powered collaborative notes platform with secure JWT authentication and user-based note management",
+      "Implemented structured prompt templates for AI-assisted note generation and summarization using the Google Gemini API",
+      "Developed RESTful APIs using Express.js with MongoDB Atlas for scalable backend services",
+      "Deployed the application on Render and managed secure environment configuration using environment variables"
+    ],
+    media: getProjectMedia("intellinote")
+  },
+
+  {
     slug: "job-portal",
     title: "Job Portal",
     strap: "Full-stack recruitment experience",
@@ -123,23 +152,7 @@ export const projects = [
     ],
     media: getProjectMedia("job protal")
   },
-  {
-    slug: "music-player",
-    title: "Music Player",
-    strap: "Interactive audio-first interface",
-    status: "UI experiment",
-    summary:
-      "A lightweight music player with playlist controls, playback interaction, and a focused visual rhythm built with core frontend technologies.",
-    details:
-      "Useful for showing interface polish, interaction handling, and attention to motion in smaller single-page products.",
-    tech: ["HTML", "CSS", "JavaScript"],
-    highlights: [
-      "Playlist and playback control logic",
-      "Responsive interaction states",
-      "Clean front-end layout and motion work"
-    ],
-    media: getProjectMedia("music")
-  },
+
   {
     slug: "ce-sprint-hub",
     title: "CE-Sprint-Hub",
@@ -157,6 +170,7 @@ export const projects = [
     ],
     media: getProjectMedia("quiz")
   }
+
 ];
 
 export const contactDetails = [
