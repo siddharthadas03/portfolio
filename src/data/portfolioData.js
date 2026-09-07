@@ -162,7 +162,8 @@ export const projects = [
       "Resume upload and application tracking",
       "Secure authentication with protected routes"
     ],
-    media: getProjectMedia("job protal")
+    media: getProjectMedia("job protal"),
+    github: "https://github.com/siddharthadas03/Job-Portal",
   },
 
   {
@@ -180,7 +181,8 @@ export const projects = [
       "Timed practice to improve speed and accuracy",
       "Custom quizzes and to-do list planning"
     ],
-    media: getProjectMedia("quiz")
+    media: getProjectMedia("quiz"),
+    github: "https://github.com/siddharthadas03/CE-Sprint-Hub",
   }
 
 ];
