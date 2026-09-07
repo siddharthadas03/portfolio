@@ -9,7 +9,7 @@ export default function Projects() {
     projects.find((project) => project.slug === activeSlug) ?? projects[0];
 
   const activeIndex = projects.findIndex(
-    (project) => project.slug === activeProject.slug
+    (project) => project.slug === activeProject.slug,
   );
 
   const activePhotos = activeProject.media.photos ?? [];
@@ -42,9 +42,7 @@ export default function Projects() {
     }
 
     const slideTimer = window.setInterval(() => {
-      setActiveMediaIndex(
-        (index) => (index + 1) % activePhotos.length
-      );
+      setActiveMediaIndex((index) => (index + 1) % activePhotos.length);
     }, 3200);
 
     return () => window.clearInterval(slideTimer);
@@ -56,13 +54,13 @@ export default function Projects() {
         <span className="section-kicker">Projects</span>
 
         <h2>
-          Featured projects with polished interfaces and practical
-          full-stack workflows.
+          Featured projects with polished interfaces and practical full-stack
+          workflows.
         </h2>
 
         <p>
-          A focused look at selected builds, highlighting the product idea,
-          core features, technology stack, and the problem each project solves.
+          A focused look at selected builds, highlighting the product idea, core
+          features, technology stack, and the problem each project solves.
         </p>
       </div>
 
@@ -126,9 +124,7 @@ export default function Projects() {
                   <button
                     key={photo}
                     type="button"
-                    className={
-                      index === activeMediaIndex ? "is-active" : ""
-                    }
+                    className={index === activeMediaIndex ? "is-active" : ""}
                     onClick={() => setActiveMediaIndex(index)}
                     aria-label={`Show project photo ${index + 1}`}
                   />
@@ -141,13 +137,9 @@ export default function Projects() {
             key={`${activeProject.slug}-copy`}
             className="project-detail-panel"
           >
-            <span className="project-status">
-              {activeProject.status}
-            </span>
+            <span className="project-status">{activeProject.status}</span>
 
-            <p className="project-strap">
-              {activeProject.strap}
-            </p>
+            <p className="project-strap">{activeProject.strap}</p>
 
             <h3>{activeProject.title}</h3>
 
@@ -181,10 +173,18 @@ export default function Projects() {
                 </a>
               )}
 
-              <a
-                href="#contact"
-                className="btn btn-secondary"
-              >
+              {activeProject.links?.github && (
+                <a
+                  href={activeProject.links.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-secondary"
+                >
+                  GitHub
+                </a>
+              )}
+
+              <a href="#contact" className="btn btn-secondary">
                 Discuss project
               </a>
             </div>
@@ -203,10 +203,7 @@ export default function Projects() {
               style={{ "--card-index": index }}
             >
               {project.media.photos?.[0] ? (
-                <img
-                  src={project.media.photos[0]}
-                  alt=""
-                />
+                <img src={project.media.photos[0]} alt="" />
               ) : (
                 <video
                   src={project.media.videos?.[0]}
@@ -218,9 +215,7 @@ export default function Projects() {
                 />
               )}
 
-              <span>
-                {String(index + 1).padStart(2, "0")}
-              </span>
+              <span>{String(index + 1).padStart(2, "0")}</span>
 
               <strong>{project.title}</strong>
             </button>

@@ -71,7 +71,9 @@ const projectAssetModules = import.meta.glob(
 const getProjectMedia = (folder) => {
   const entries = Object.entries(projectAssetModules)
     .filter(([path]) => path.includes(`/Images/${folder}/`))
-    .sort(([firstPath], [secondPath]) => firstPath.localeCompare(secondPath));
+    .sort(([firstPath], [secondPath]) =>
+      firstPath.localeCompare(secondPath)
+    );
 
   const photos = entries
     .filter(([path]) => /\.(png|jpe?g|webp|avif|gif)$/i.test(path))
