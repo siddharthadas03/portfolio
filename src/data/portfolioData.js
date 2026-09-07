@@ -107,8 +107,13 @@ export const projects = [
       "NGO matching and location-aware coordination",
       "Operational dashboard for requests and delivery status"
     ],
-    media: getProjectMedia("noplateemplty")
+    media: getProjectMedia("noplateemplty"),
+      links: {
+    live: "https://no-plate-empty-web.onrender.com/",
+    github: "https://github.com/siddharthadas03/No-Plate-Empty"
+
   },
+},
   {
     slug: "intellinote",
     title: "IntelliNote",
@@ -132,7 +137,12 @@ export const projects = [
       "Developed RESTful APIs using Express.js with MongoDB Atlas for scalable backend services",
       "Deployed the application on Render and managed secure environment configuration using environment variables"
     ],
-    media: getProjectMedia("intellinote")
+    media: getProjectMedia("intellinote"),
+     videoFirst: true,
+      links: {
+    live: "https://peblo-frontend-3k1b.onrender.com/",
+    github: "https://github.com/siddharthadas03/peblo-ai-notes"
+  }
   },
 
   {

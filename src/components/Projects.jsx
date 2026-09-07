@@ -4,13 +4,29 @@ import { projects } from "../data/portfolioData";
 export default function Projects() {
   const [activeSlug, setActiveSlug] = useState(projects[0].slug);
   const [activeMediaIndex, setActiveMediaIndex] = useState(0);
-  const activeProject = projects.find(project => project.slug === activeSlug) ?? projects[0];
-  const activeIndex = projects.findIndex(project => project.slug === activeProject.slug);
+
+  const activeProject =
+    projects.find((project) => project.slug === activeSlug) ?? projects[0];
+
+  const activeIndex = projects.findIndex(
+    (project) => project.slug === activeProject.slug
+  );
+
   const activePhotos = activeProject.media.photos ?? [];
   const activeVideos = activeProject.media.videos ?? [];
+
   const hasPhotoSlideshow = activePhotos.length > 1;
-  const hasVideoOnly = activePhotos.length === 0 && activeVideos.length > 0;
-  const activePhoto = activePhotos[activeMediaIndex % Math.max(activePhotos.length, 1)];
+
+  // Show video when the project has a video and either:
+  // 1. it has no photos, or
+  // 2. videoFirst is enabled for that project (e.g. IntelliNote)
+  const hasVideoOnly =
+    activeVideos.length > 0 &&
+    (activePhotos.length === 0 || activeProject.media.videoFirst);
+
+  const activePhoto =
+    activePhotos[activeMediaIndex % Math.max(activePhotos.length, 1)];
+
   const activeVideo = activeVideos[0];
 
   const handleSelectProject = (slug) => {
@@ -26,7 +42,9 @@ export default function Projects() {
     }
 
     const slideTimer = window.setInterval(() => {
-      setActiveMediaIndex(index => (index + 1) % activePhotos.length);
+      setActiveMediaIndex(
+        (index) => (index + 1) % activePhotos.length
+      );
     }, 3200);
 
     return () => window.clearInterval(slideTimer);
@@ -36,7 +54,12 @@ export default function Projects() {
     <section id="projects" className="section projects-section">
       <div className="section-heading" data-reveal="up">
         <span className="section-kicker">Projects</span>
-        <h2>Featured projects with polished interfaces and practical full-stack workflows.</h2>
+
+        <h2>
+          Featured projects with polished interfaces and practical
+          full-stack workflows.
+        </h2>
+
         <p>
           A focused look at selected builds, highlighting the product idea,
           core features, technology stack, and the problem each project solves.
@@ -49,20 +72,19 @@ export default function Projects() {
         style={{ "--active-index": activeIndex }}
       >
         <div className="project-switcher" aria-label="Choose project">
-          {projects.map(project => (
+          {projects.map((project) => (
             <button
               key={project.slug}
               type="button"
-              className={`project-pill ${project.slug === activeProject.slug ? "is-active" : ""}`}
+              className={`project-pill ${
+                project.slug === activeProject.slug ? "is-active" : ""
+              }`}
               onClick={() => handleSelectProject(project.slug)}
             >
               <strong>{project.title}</strong>
             </button>
           ))}
         </div>
-
-
-        
 
         <div className="project-stage">
           <div className="project-spotlight">
@@ -72,7 +94,10 @@ export default function Projects() {
               <span />
             </div>
 
-            <div key={`${activeProject.slug}-${activeMediaIndex}`} className="project-thumbnail-frame">
+            <div
+              key={`${activeProject.slug}-${activeMediaIndex}`}
+              className="project-thumbnail-frame"
+            >
               {hasVideoOnly ? (
                 <video
                   src={activeVideo}
@@ -83,18 +108,27 @@ export default function Projects() {
                   playsInline
                 />
               ) : (
-                <img src={activePhoto} alt={`${activeProject.title} project preview`} />
+                <img
+                  src={activePhoto}
+                  alt={`${activeProject.title} project preview`}
+                />
               )}
+
               <div className="project-scanline" />
             </div>
 
             {hasPhotoSlideshow && (
-              <div className="project-media-dots" aria-label={`${activeProject.title} photo slideshow`}>
+              <div
+                className="project-media-dots"
+                aria-label={`${activeProject.title} photo slideshow`}
+              >
                 {activePhotos.map((photo, index) => (
                   <button
                     key={photo}
                     type="button"
-                    className={index === activeMediaIndex ? "is-active" : ""}
+                    className={
+                      index === activeMediaIndex ? "is-active" : ""
+                    }
                     onClick={() => setActiveMediaIndex(index)}
                     aria-label={`Show project photo ${index + 1}`}
                   />
@@ -103,21 +137,32 @@ export default function Projects() {
             )}
           </div>
 
-          <article key={`${activeProject.slug}-copy`} className="project-detail-panel">
-            <span className="project-status">{activeProject.status}</span>
-            <p className="project-strap">{activeProject.strap}</p>
+          <article
+            key={`${activeProject.slug}-copy`}
+            className="project-detail-panel"
+          >
+            <span className="project-status">
+              {activeProject.status}
+            </span>
+
+            <p className="project-strap">
+              {activeProject.strap}
+            </p>
+
             <h3>{activeProject.title}</h3>
+
             <p>{activeProject.summary}</p>
+
             <p>{activeProject.details}</p>
 
             <ul className="feature-list">
-              {activeProject.highlights.map(item => (
+              {activeProject.highlights.map((item) => (
                 <li key={item}>{item}</li>
               ))}
             </ul>
 
             <div className="tag-row">
-              {activeProject.tech.map(item => (
+              {activeProject.tech.map((item) => (
                 <span key={item} className="project-tag">
                   {item}
                 </span>
@@ -125,7 +170,21 @@ export default function Projects() {
             </div>
 
             <div className="project-actions">
-              <a href="#contact" className="btn btn-primary">
+              {activeProject.links?.live && (
+                <a
+                  href={activeProject.links.live}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary"
+                >
+                  Live Demo
+                </a>
+              )}
+
+              <a
+                href="#contact"
+                className="btn btn-secondary"
+              >
                 Discuss project
               </a>
             </div>
@@ -137,16 +196,32 @@ export default function Projects() {
             <button
               key={project.slug}
               type="button"
-              className={`project-mini-card ${project.slug === activeProject.slug ? "is-active" : ""}`}
+              className={`project-mini-card ${
+                project.slug === activeProject.slug ? "is-active" : ""
+              }`}
               onClick={() => handleSelectProject(project.slug)}
               style={{ "--card-index": index }}
             >
               {project.media.photos?.[0] ? (
-                <img src={project.media.photos[0]} alt="" />
+                <img
+                  src={project.media.photos[0]}
+                  alt=""
+                />
               ) : (
-                <video src={project.media.videos?.[0]} autoPlay loop muted playsInline aria-hidden="true" />
+                <video
+                  src={project.media.videos?.[0]}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  aria-hidden="true"
+                />
               )}
-              <span>{String(index + 1).padStart(2, "0")}</span>
+
+              <span>
+                {String(index + 1).padStart(2, "0")}
+              </span>
+
               <strong>{project.title}</strong>
             </button>
           ))}
