@@ -61,6 +61,9 @@ export default function Projects() {
           ))}
         </div>
 
+
+        
+
         <div className="project-stage">
           <div className="project-spotlight">
             <div className="project-orbit" aria-hidden="true">
