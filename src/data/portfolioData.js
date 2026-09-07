@@ -163,7 +163,9 @@ export const projects = [
       "Secure authentication with protected routes"
     ],
     media: getProjectMedia("job protal"),
+    links: {
     github: "https://github.com/siddharthadas03/Job-Portal",
+    },
   },
 
   {
@@ -182,7 +184,9 @@ export const projects = [
       "Custom quizzes and to-do list planning"
     ],
     media: getProjectMedia("quiz"),
+    links: {
     github: "https://github.com/siddharthadas03/CE-Sprint-Hub",
+    },
   }
 
 ];
